@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.BattleController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="43.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="150.0" fitWidth="163.0" layoutX="393.0" layoutY="230.0" pickOnBounds="true" preserveRatio="true" />
+      <Pane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <ImageView fitHeight="406.0" fitWidth="606.0" layoutX="-3.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@loveatsciku.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="m2Image" fitHeight="239.0" fitWidth="218.0" layoutX="315.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="m1Image" fitHeight="265.0" fitWidth="244.0" layoutX="37.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="monster1" layoutX="-3.0" prefHeight="35.0" prefWidth="314.0" style="-fx-background-color: white;" text="Monster 1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="monste2" layoutX="310.0" prefHeight="35.0" prefWidth="289.0" style="-fx-background-color: black;" text="Monster 2" textFill="#f5f2f2">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="round" layoutX="239.0" layoutY="212.0" prefHeight="35.0" prefWidth="94.0" style="-fx-background-color: red;" text="Label" textFill="#e0d214">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="heal" layoutX="486.0" layoutY="35.0" mnemonicParsing="false" onAction="#handleHealBtnOnAction" prefHeight="25.0" prefWidth="116.0" style="-fx-background-color: blue;" text="Heal" textFill="#d6ee3a" />
+            <Button fx:id="attack" layoutX="-3.0" layoutY="35.0" mnemonicParsing="false" onAction="#handleAtkBtnOnAction" prefHeight="25.0" prefWidth="116.0" style="-fx-background-color: red;" text="Attack" textFill="#cbdb1a" />
+            <TextField fx:id="healing" layoutX="226.0" layoutY="367.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

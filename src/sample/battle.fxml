@@ -32,14 +32,14 @@
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label fx:id="round" layoutX="239.0" layoutY="212.0" prefHeight="35.0" prefWidth="94.0" style="-fx-background-color: red;" text="Label" textFill="#e0d214">
+            <Label fx:id="round" layoutX="239.0" layoutY="212.0" prefHeight="35.0" prefWidth="94.0" style="-fx-background-color: red;" text="Round" textFill="#e0d214">
                <font>
                   <Font size="24.0" />
                </font>
             </Label>
             <Button fx:id="heal" layoutX="486.0" layoutY="35.0" mnemonicParsing="false" onAction="#handleHealBtnOnAction" prefHeight="25.0" prefWidth="116.0" style="-fx-background-color: blue;" text="Heal" textFill="#d6ee3a" />
             <Button fx:id="attack" layoutX="-3.0" layoutY="35.0" mnemonicParsing="false" onAction="#handleAtkBtnOnAction" prefHeight="25.0" prefWidth="116.0" style="-fx-background-color: red;" text="Attack" textFill="#cbdb1a" />
-            <TextField fx:id="healing" layoutX="226.0" layoutY="367.0" />
+            <TextField fx:id="healing" layoutX="226.0" layoutY="367.0" promptText="Enter hp to heal" />
          </children>
       </Pane>
    </children>

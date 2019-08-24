@@ -74,16 +74,6 @@ public class Monster {
 
 
 
-//    public void heal(Monster attacker, int healer, int old) {
-//
-//        if ( healer > 0 )
-//            if (  healer <= old    ) {
-//                hp = hp + healer;
-//            }
-//            else{
-//                hp = old;
-//            }
-//    }
 
     public void heal(int healer) {
 
@@ -93,7 +83,7 @@ public class Monster {
             }
             else{
                 this.hp = this.oldHp;
-              //  this.heal = true;
+
             }
         this.heal = true;
 
@@ -120,11 +110,7 @@ public class Monster {
         }
     }
 
-//    public void monsterInfo(Monster attacker, Monster defender, int old1, int old2) {
-//
-//        System.out.println("Monster "+ attacker.getName()+" atk : " + attacker.getAtk() + " def : " + attacker.getDef() + " hp : " + attacker.getHp() + "/"+old1);
-//        System.out.println("Monster "+defender.getName()+" atk : " + defender.getAtk() + " def : " + defender.getDef() + " hp : " + defender.getHp() + "/"+old2);
-//    }
+
 
 
 

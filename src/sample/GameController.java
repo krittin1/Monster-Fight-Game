@@ -16,16 +16,7 @@ public class GameController {
 
     }
     public void attackState(){
-//        if (turn > 0) {
-//            if (m2.getCanUseSkill()) {
-//                m2.attack(m1,m2);
-//            }
-//        }else {
-//
-//            this.round++;
-//        }
-//
-//        changeTurn();
+
 
 
          if (this.turn == 1) {
@@ -59,20 +50,7 @@ public class GameController {
      }
 
 
-//    public void healState( int healer, int old){
-//        if(this.turn == 1){
-//            m1.heal(m1,healer,old);
-//            changeTurn();
-//            this.round++;
-//        }
-//        else{
-//            m2.heal(m2,healer,old);
-//            changeTurn();
-//            this.round++;
-//        }
-//
-//        changeTurn();
-//    }
+
 
     public void healState( int healer){
 
@@ -113,7 +91,7 @@ public class GameController {
 
 
 
-//       changeTurn();
+
 
 
 

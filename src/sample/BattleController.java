@@ -67,20 +67,20 @@ public class BattleController {
         // check isWin
         if (gameController.isWin()) {
             if(gameController.getWinMonster().getName().equals(m1.getName())){
-                monster1.setText("Congratulation " + gameController.getWinMonster().toString());
+                monster1.setText("Winner is " + gameController.getWinMonster().toString());
 
                 m1Image.setVisible(true);
                 m2Image.setVisible(false);
                 monste2.setVisible(false);
-//                display();
+
             }
             else{
-                monste2.setText("Congratulation " + gameController.getWinMonster().toString());
+                monste2.setText("Winner is " + gameController.getWinMonster().toString());
 
                 m1Image.setVisible(false);
                 m2Image.setVisible(true);
                 monster1.setVisible(false);
-//                display();
+
             }
             attack.setVisible(false);
             heal.setVisible(false);
@@ -88,7 +88,7 @@ public class BattleController {
 
         }
 
-        // display
+
         else{
             gameController.attackState();
             setMonster1(gameController.getM1());
@@ -98,13 +98,7 @@ public class BattleController {
 
     }
 
-//    @FXML public void handleHealBtnOnAction(ActionEvent event){
-//        gameController.healState(Integer.parseInt(healing.getText()),Integer.parseInt(old.getText()));
-//        setMonster1(gameController.getM1());
-//        setMonster2(gameController.getM2());
-//        display();
-//
-//    }
+
 
 
     @FXML public void handleHealBtnOnAction(ActionEvent event){
